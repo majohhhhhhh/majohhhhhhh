@@ -14,6 +14,9 @@ class bruch():
             self.z=self.z//a
             self.n=self.n//a
             
+    def __mul__(self,other):
+        return bruch(self.z*other.z,self.n*other.n)
+        
     def __add__(self,other):
         return bruch(self.z*other.n+self.n*other.z,self.n*other.n)
     
@@ -21,8 +24,9 @@ class bruch():
     def __str__(self) :
         return str(self.z)+'/'+str(self.n)
     
-x=bruch(15,21)
-y=bruch(12,16)
+x=bruch(21,15)
+y=bruch(2,7)
 print(x)
 print(y)
-print(x+y)
+print(x*y)
+
