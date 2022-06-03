@@ -1,3 +1,4 @@
+# Klasse Brüche
 class bruch():
     
     def __init__(self,z,n=1):     
