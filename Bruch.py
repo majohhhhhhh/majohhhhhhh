@@ -1,3 +1,4 @@
+# Klasse Brüche
 class bruch():
     
     def __init__(self,z,n=1):     
@@ -16,6 +17,10 @@ class bruch():
             
     def __mul__(self,other):
         return bruch(self.z*other.z,self.n*other.n)
+        
+    def __add__(self,other):
+        return bruch(self.z*other.n+self.n*other.z,self.n*other.n)
+    
     
     def __str__(self) :
         return str(self.z)+'/'+str(self.n)
@@ -25,4 +30,5 @@ y=bruch(2,7)
 print(x)
 print(y)
 print(x*y)
+print(x+y)
 
