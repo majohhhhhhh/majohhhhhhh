@@ -29,4 +29,5 @@ y=bruch(2,7)
 print(x)
 print(y)
 print(x*y)
+print(x+y)
 
